@@ -6,7 +6,7 @@ services:
     environment:
       #- ACMEMAIL= xxx@qq.com  #申请证书用
       - QEXODOMAIN=blog.example.com
-	  - IP=192.168.5.4      #区域网ip
+      - IP=192.168.5.4      #区域网ip
       #- HEXODOMAIN=            #不填不反代hexo 填了会申请证书
 
     volumes:
