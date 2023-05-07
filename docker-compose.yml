@@ -20,4 +20,4 @@ services:
     ports:
      - "4000:4000"
     volumes:
-     -/path/to/hexo:/hexoFomalhaut   #注意与qexo的hexo路径相同
+     -/path/to/hexo:/hexoFomalhaut   #注意/path/to/hexo与qexo的hexo路径相同
