@@ -14,5 +14,6 @@ Qexo 的后端组件，包括数据库模型、API、身份验证和其他业务
 更改其中的域名内容,和hexo，qexo路径
 
 sudo docker-compose up -d
-在浏览器中访问 http://localhost:4000，你应该可以看到你的博客网站。
+在浏览器中访问 http://localhost:4000
+你应该可以看到你的博客网站
 http://localhost:8000 访问后台
