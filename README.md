@@ -1,5 +1,5 @@
 # qexo-Fomal-docker
-![Fomalhaut](https://github.com/fomalhaut1998/hexo-theme-Fomalhaut) + ![Qexo](https://github.com/Qexo/Qexo)
+![hexo-theme-Fomalhaut](https://github.com/fomalhaut1998/hexo-theme-Fomalhaut) + ![Qexo](https://github.com/Qexo/Qexo)
 该项目是基于 Fomalhaut 和 Qexo 的整合项目，它将 Fomalhaut 的博客主题和 Qexo 的后端框架结合在一起，以创建一个完整的博客网站。
 
 项目结构
