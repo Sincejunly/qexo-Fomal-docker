@@ -5,7 +5,7 @@ services:
     container_name: qexo
     environment:
       #ACMEMAIL: xxx@qq.com  #申请证书用
-      QEXODOMAIN: qexo.example.com:port
+      QEXODOMAIN: qexo.example.com
       IP: 192.168.5.4       #局域网ip 可以填127.0.0.1
       #HEXODOMAIN:            #不填不反代hexo 填了会申请证书
       HEXOFILE: /path/to/hexo #hexo源码路径
