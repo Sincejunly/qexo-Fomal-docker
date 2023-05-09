@@ -9,8 +9,9 @@ Qexo 的后端组件，包括数据库模型、API、身份验证和其他业务
 使用说明
 要在本地安装和运行该项目，请按照以下步骤操作：
 
-下载 docker-compose.yml 文件。
+下载 `docker-compose.yml` 文件。
 更改其中的域名、hexo 和 qexo 路径。
-在终端中输入以下命令启动容器：sudo docker-compose up -d。
-在浏览器中访问 http://localhost:4000，即可查看你的博客网站。
+在终端中输入以下命令启动容器：`sudo docker-compose up -d`。
+在浏览器中访问 http://localhost:4000
+即可查看你的博客网站。
 如果需要访问后台，请访问 http://localhost:8000。
