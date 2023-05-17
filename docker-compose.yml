@@ -1,22 +1,23 @@
 version: '3'
 services:
   qexo:
-    image: homuras/qexo-docker:latest 
+    image: docker.homura.top:78/homura/qexo/qexo-docker:latest 
     container_name: qexo
     environment:
       #ACMEMAIL: xxx@qq.com  #申请证书用
-      QEXODOMAIN: qexo.example.com
-      IP: 192.168.5.4       #局域网ip 可以填127.0.0.1
+      QEXODOMAIN: qexo.xxxx.com
+      IP: 192.168.5.4       #局域网ip，一般填127.0.0.1
       #HEXODOMAIN:            #不填不反代hexo 填了会申请证书
-      HEXOFILE: /path/to/hexo #hexo源码路径
+      HEXOFILE: /volume1/docker/hexo #hexo源码路径
     volumes:
       - qexo-data:/usr/local/qexo
-      - hexo-data:/path/to/hexo
+      - hexo-data:/volume1/docker/hexo
     ports:
       - "8000:8000"
+      - "5103:5103"   #webhook端口，只要有指令自动执行git pull ,需要你自己在容器中链接远程仓库
 
   hexo:
-    image: homuras/hexo-docker:latest 
+    image: docker.homura.top:78/homura/qexo/hexo-docker:latest 
     #镜像会自动生成一个hexo不需要你准备
     container_name: hexo
     volumes:
@@ -31,10 +32,10 @@ volumes:
     driver_opts:
       type: none
       o: bind
-      device: /path/to/qexo
+      device: /volume1/docker/qexo
   hexo-data:
     driver: local
     driver_opts:
       type: none
       o: bind
-      device: /path/to/hexo  #hexo源码路径
+      device: /volume1/docker/hexo  #hexo源码路径
