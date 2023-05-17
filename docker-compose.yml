@@ -1,7 +1,7 @@
 version: '3'
 services:
   qexo:
-    image: docker.homura.top:78/homura/qexo/qexo-docker:latest 
+    image: homuras/qexo-docker:latest 
     container_name: qexo
     environment:
       #ACMEMAIL: xxx@qq.com  #申请证书用
@@ -17,7 +17,7 @@ services:
       - "5103:5103"   #webhook端口，只要有指令自动执行git pull ,需要你自己在容器中链接远程仓库
 
   hexo:
-    image: docker.homura.top:78/homura/qexo/hexo-docker:latest 
+    image: homuras/hexo-docker:latest 
     #镜像会自动生成一个hexo不需要你准备
     container_name: hexo
     volumes:
