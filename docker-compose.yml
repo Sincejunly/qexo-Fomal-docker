@@ -14,7 +14,7 @@ services:
       - hexo-data:/volume1/docker/hexo
     ports:
       - "8000:8000"
-      - "5103:5103"   #webhook端口，只要有指令自动执行git pull ,需要你自己在容器中链接远程仓库
+      - "5103:5103"   #webhook端口，只要有请求自动执行git pull ,需要你自己在容器中链接远程仓库
 
   hexo:
     image: homuras/hexo-docker:latest 
